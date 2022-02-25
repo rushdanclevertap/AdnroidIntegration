@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi Create user on dashboard"
+        android:id="@+id/b1"/>
+
+
+    <Button
+        android:layout_below="@id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map user info to dashboard"
+        android:id="@+id/b2"/>
+
+    <Button
+        android:layout_below="@id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Push Notification"
+        android:id="@+id/b3"/>
+
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/b3"
+        android:text="In app notification" />
+
+
+    <Button
+        android:layout_below="@id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App Inbox"
+        android:id="@+id/b5"/>
+
+
+    <Button
+        android:layout_below="@id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="custom app inbox"
+        android:id="@+id/test"/>
+
+
+
+    <Button
+        android:layout_below="@id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trail"
+        android:id="@+id/b6"/>'
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/c1"
+        android:layout_below="@+id/b6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/native_display_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android Native Display Title"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/native_display_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Android Native Display Message"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/c1"
+        android:id="@+id/rv"/>
+
+
+
+
+
+
+
+</RelativeLayout>
